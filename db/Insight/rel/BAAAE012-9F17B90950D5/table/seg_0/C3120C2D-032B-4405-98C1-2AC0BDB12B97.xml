@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3120C2D-032B-4405-98C1-2AC0BDB12B97" name="TECHNOLOGY_USERS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>TECHNOLOGY_USERS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1EC953AA-3F10-9277-477B-756184528A98">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BILLING_RATE" id="CACE6E17-9602-D23B-98D2-8EDE275ACBAD">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>BILLING_RATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COST_RATE" id="D92706B8-B0D1-3D85-7AAB-F29372D4563C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>COST_RATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="4FAB6F4F-B845-767E-37AC-0CB4BD80225E">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEC_ID" id="7E98508B-9A2F-C8A8-BD78-7943336C4685">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>TEC_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>5E872F8C-4E6A-2B6C-91C5-CB201B52202D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5E97840-5D3A-1CF6-6A65-16747EDB6627" referredColumn="5E872F8C-4E6A-2B6C-91C5-CB201B52202D"/>
+</associations>
+</Column>
+<Column name="USE_ID" id="75D0966A-0C37-3208-26DC-7813672F1A7D">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>USE_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>A4C53357-7EB9-E016-1E23-BA18F20F992F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="309D6921-29D7-90C7-EB5E-0AB5534F82B7" referredColumn="A4C53357-7EB9-E016-1E23-BA18F20F992F"/>
+</associations>
+</Column>
+<Column name="PRIMARY_SKILL" id="E4D4FB0A-D5ED-AC58-D05D-509092E4406A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>PRIMARY_SKILL</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EFFECTIVE_DATE" id="CC5AD13E-CCED-A598-16DF-A7A987E5DD46">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TECHNOLOGY_USERS</sourceObjSchema>
+<sourceObjName>EFFECTIVE_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E548A8D-7155-D520-9AF1-A47D4D434984" name="XPKTECHNOLOGY_USERS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKTECHNOLOGY_USERS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EC953AA-3F10-9277-477B-756184528A98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4205016B-FD81-F308-E5FE-EAECC19EB523" name="XPKTECHNOLOGY_USERS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKTECHNOLOGY_USERS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EC953AA-3F10-9277-477B-756184528A98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD78E6D9-AB71-4555-4F0B-E37D8939C535" name="XPKTECHNOLOGY_USERS_1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKTECHNOLOGY_USERS_1</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC5AD13E-CCED-A598-16DF-A7A987E5DD46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="186752D9-35F9-5928-BDB5-1AB8DC3583A3" name="R_103">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75D0966A-0C37-3208-26DC-7813672F1A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4784D6A3-CE45-E5F1-40A2-2AD943CBAE41" name="R_9">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E98508B-9A2F-C8A8-BD78-7943336C4685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

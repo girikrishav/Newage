@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="INVOICING_MILESTONE_AUDIT" directorySegmentName="seg_0" id="C48BE54F-6D01-A950-FC7A-2F115699E2B3">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AB653ADB-3E67-07B7-FB5E-D7454A6DB74B</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="AUDIT_LOGIN" id="0C88F858-5715-3A2F-2B59-C77D29A0DEFF">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="AMOUNT" id="28F34612-227C-B04B-D849-A6ED9BEA2A3C">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ACTUAL_COMPLETION_DATE" id="2D244C20-B22E-D559-1A1F-56A495ED7DFD">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="INV_MIL_ID" id="41345125-C4F2-1162-0A27-8B5628CFBF7D">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID" id="5656B115-8F7B-35C6-A3CD-47E8E211BBC1">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="LAST_REMINDER_DATE" id="76926F92-B4A3-F187-D83F-E5F2C984A935">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="DUE_DATE" id="9803FAB5-C084-FE64-20F2-B5157BEE9442">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="DESCRIPTION" id="A717C0AA-7DC3-3A08-4B05-6F8BB0A86AB6">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="NAME" id="BB8C7BD4-852F-1D63-FE63-8DF91689C175">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="AUDIT_DATE" id="BFE009C5-38E4-3CCB-F554-F729D0B9B3E9">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="PRO_ID" id="F4A9F8F6-CC0B-D1EC-8AAE-F92D8BA2ACD8">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="COMMENTS" id="FA774E36-0A80-CACA-38B3-421C2EE1E5CF">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="XPKINVOICING_MILESTONE_AUDIT" id="FB1D6082-E545-0551-F4ED-4914C4CF78E0">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<segment>E0F354A9-019A-6546-C0AD-CA48332051B0</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R_72" id="21988233-B16E-66FD-D318-6CF09A895B04">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R_73" id="8B9380A1-A9DA-137A-538A-99F30CD16EBF">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="XPKINVOICING_MILESTONE_AUDIT" id="E15909AE-9FA7-D51D-4752-D1914F50892D">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<segment>E0F354A9-019A-6546-C0AD-CA48332051B0</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+<existingIndex>FB1D6082-E545-0551-F4ED-4914C4CF78E0</existingIndex>
+<indexSegment>E0F354A9-019A-6546-C0AD-CA48332051B0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

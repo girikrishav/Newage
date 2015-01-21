@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="VAC_AUD_SEQ" directorySegmentName="seg_0" id="FBE8E20D-F957-57BC-1B63-F2F00D40BEF3">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>VAC_AUD_SEQ</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<cache>20</cache>
+<incrementBy>1</incrementBy>
+<maxValue>999999999999999999999999999</maxValue>
+<minValue>1</minValue>
+<user>42BF9B12-1809-88EE-330C-88F8510DCEFE</user>
+</SequenceOraclev10g>

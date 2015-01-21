@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="TIMESHEETS" directorySegmentName="seg_0" id="2FD856F2-B5BF-98DC-61E9-885734785409">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>EDFA4DCF-FDD6-1DE5-ABD2-B4D46551748C</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="HOURS" id="26750F97-494A-F552-FCAD-7ECDC8C251A0">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="PRO_USE_ID" id="864CEB51-F065-6662-A54A-654AC8962820">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="AUTO_COMPUTE_HOURS" id="AF22A6B1-7054-B6D6-1B14-1A6C441CD714">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID" id="C1A6E031-DB28-4C9B-9A9B-9054ADC829A5">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="VAC_ID" id="C60D857D-C111-3147-D0F0-FCD8DFF992F0">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="FOR_DATE" id="DDD423CB-9EAF-6B15-249D-A212E412D31A">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="COMMENTS" id="E9B6C3DA-6EF3-1B23-D937-760D3370AEB2">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="XPKTIMESHEETS" id="3353AAA5-4BE7-6A1F-A192-A948FC860FFC">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<segment>4C2DCFAD-0A0C-6151-6FBE-E5F1BAE3CA44</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="XAK1TIMESHEETS" id="989B9932-77FB-729F-0D2A-C58B50CBAC89">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<segment>A00DA56E-9773-3FC2-8866-541398A27D8A</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TIMESHEETS_FK1" id="066C5A09-1CD3-DEE2-3AD7-4EDECE0047F0">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R_55" id="C3178788-504C-86DA-6A9C-9FBE9D2F5715">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="XPKTIMESHEETS" id="10263B0D-5B76-373F-6EC5-FB32702F09EF">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<segment>4C2DCFAD-0A0C-6151-6FBE-E5F1BAE3CA44</segment>
+<tableSpace>96440DB4-AAB5-7698-9498-15E6F275AEB7</tableSpace>
+<existingIndex>3353AAA5-4BE7-6A1F-A192-A948FC860FFC</existingIndex>
+<indexSegment>4C2DCFAD-0A0C-6151-6FBE-E5F1BAE3CA44</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

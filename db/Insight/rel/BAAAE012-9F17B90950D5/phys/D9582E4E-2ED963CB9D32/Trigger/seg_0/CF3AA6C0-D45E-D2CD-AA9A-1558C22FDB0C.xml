@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="VAC_POST_INS_UPD" directorySegmentName="seg_0" id="CF3AA6C0-D45E-D2CD-AA9A-1558C22FDB0C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>VAC_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN XRAYLOGIC.START_END_DATE_CHECK( :NEW.FROM_DATE, :NEW.TO_DATE);&lt;br/&gt;  INSERT&lt;br/&gt;  INTO VACATION_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      FROM_DATE,&lt;br/&gt;      TO_DATE,&lt;br/&gt;      HOURS_PER_DAY,&lt;br/&gt;      USE_ID,&lt;br/&gt;      VAC_ID,&lt;br/&gt;      VAC_REA_ID,&lt;br/&gt;      APPROVED,&lt;br/&gt;      APPLICATION_DATE&lt;br/&gt;    )&lt;br/&gt;  SELECT VAC_AUD_SEQ.NEXTVAL,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.FROM_DATE,&lt;br/&gt;    :NEW.TO_DATE,&lt;br/&gt;    :NEW.HOURS_PER_DAY,&lt;br/&gt;    :NEW.USE_ID,&lt;br/&gt;    :NEW.ID,&lt;br/&gt;    :NEW.VAC_REA_ID,&lt;br/&gt;    :NEW.APPROVED,&lt;br/&gt;    :NEW.APPLICATION_DATE&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>ED9ACC7C-6AB3-B19A-A68C-132B2606F0FC</table>
+</TriggerOraclev10g>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INV_MIL_POST_INS_UPD" directorySegmentName="seg_0" id="5DC7C876-1989-5249-8721-CF2F17C0D95F">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INV_MIL_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  INSERT&lt;br/&gt;  INTO INVOICING_MILESTONE_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      NAME,&lt;br/&gt;      DESCRIPTION,&lt;br/&gt;      AMOUNT,&lt;br/&gt;      DUE_DATE,&lt;br/&gt;      LAST_REMINDER_DATE,&lt;br/&gt;      ACTUAL_COMPLETION_DATE,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      PRO_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      INV_MIL_ID&lt;br/&gt;    )&lt;br/&gt;  SELECT INV_MIL_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.NAME,&lt;br/&gt;    :NEW.DESCRIPTION,&lt;br/&gt;    :NEW.AMOUNT,&lt;br/&gt;    :NEW.DUE_DATE,&lt;br/&gt;    :NEW.LAST_REMINDER_DATE,&lt;br/&gt;    :NEW.ACTUAL_COMPLETION_DATE,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.PRO_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.ID&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>C42675FD-F70C-4DC3-88D4-36370AA43FCD</table>
+</TriggerOraclev10g>

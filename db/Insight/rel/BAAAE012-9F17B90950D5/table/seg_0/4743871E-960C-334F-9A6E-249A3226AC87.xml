@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4743871E-960C-334F-9A6E-249A3226AC87" name="INVOICE_DETAIL_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INVOICE_DETAIL_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="922AF969-DEA3-92F0-4039-427AA28F2BA1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="ADDFBA7E-4141-9412-0011-8E5D7C4BEA85">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINE_AMOUNT" id="500CAD42-1C64-DCCF-3DF5-4C79AE70A209">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>LINE_AMOUNT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="1F19DF47-779A-3C62-F6C3-34058F852B63">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INV_HEA_ID" id="EB5C289D-0602-6ADE-1E37-2222AD1B8585">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>INV_HEA_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>ABAC1C27-DF31-C648-2BD3-A3BC4EC062AC</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2640AF7E-A6D6-F3DE-BE1E-995805DCE7B4" referredColumn="ABAC1C27-DF31-C648-2BD3-A3BC4EC062AC"/>
+</associations>
+</Column>
+<Column name="INV_MIL_ID" id="ABCED212-478D-B9AC-C08D-3F5CD7CD208C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>INV_MIL_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUDIT_LOGIN" id="CA46E07B-710F-A851-3BA4-BE1743881F80">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>AUDIT_LOGIN</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUDIT_DATE" id="0F7564A7-78A9-6C16-661E-974ADCA54D68">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>AUDIT_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INV_DET_ID" id="5413997A-017C-9DF1-4F66-C6BF5F3B01AC">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_DETAIL_AUDIT</sourceObjSchema>
+<sourceObjName>INV_DET_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>1CE32B79-34BA-A6DD-F3BD-68CC9FC6E855</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82CBC93A-988D-5A63-FEC3-33C677A4563C" referredColumn="1CE32B79-34BA-A6DD-F3BD-68CC9FC6E855"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="171CA6ED-8D1E-3D15-EBCA-E3F876527B2D" name="XPKINVOICE_DETAIL_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKINVOICE_DETAIL_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="922AF969-DEA3-92F0-4039-427AA28F2BA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8800963-80BD-975B-B478-8B7BBC93D53D" name="XPKINVOICE_DETAIL_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKINVOICE_DETAIL_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="922AF969-DEA3-92F0-4039-427AA28F2BA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C7E7842-C91C-8ABE-57C3-9F3FFC40F3F1" name="R_104">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5413997A-017C-9DF1-4F66-C6BF5F3B01AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4823650E-DFB2-407C-3F61-9F3D256ADA1A" name="R_106">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB5C289D-0602-6ADE-1E37-2222AD1B8585"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

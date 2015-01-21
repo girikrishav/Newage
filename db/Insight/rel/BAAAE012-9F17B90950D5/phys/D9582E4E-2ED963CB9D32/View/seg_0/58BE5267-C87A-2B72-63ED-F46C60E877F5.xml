@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="USER_ASSIGNED_HOURS_VIEW" directorySegmentName="seg_0" id="58BE5267-C87A-2B72-63ED-F46C60E877F5">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+</TableViewProxyOraclev10g>

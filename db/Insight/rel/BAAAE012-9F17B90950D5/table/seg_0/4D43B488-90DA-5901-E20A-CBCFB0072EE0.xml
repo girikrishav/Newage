@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D43B488-90DA-5901-E20A-CBCFB0072EE0" name="PROJECT_COST_ADDERS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PROJECT_COST_ADDERS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C9557DDE-7915-404C-9BC3-A7B29141601D">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT_DATE" id="F1FDAE3F-6CE3-151F-BEAC-250368E8D74D">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>AMOUNT_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="0A79624A-3A02-BDA3-360D-FF0040C54A7A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="280C3758-9CAD-2541-2387-D6182B3206E7">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_ID" id="65906464-279A-D923-91A3-1C9D34B9F118">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>PRO_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>B7E1B41D-4D8E-F2A1-6463-BA353E221301</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07A8D41B-B108-1C63-B336-523FE37BFB17" referredColumn="B7E1B41D-4D8E-F2A1-6463-BA353E221301"/>
+</associations>
+</Column>
+<Column name="COS_ADD_TYP_ID" id="66157B0D-CC18-9ACA-44DB-9C4249C22F26">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PROJECT_COST_ADDERS</sourceObjSchema>
+<sourceObjName>COS_ADD_TYP_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D399C626-E328-7E71-E990-1C4C4DEFF173" name="PROJECT_COST_ADDERS_PK">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PROJECT_COST_ADDERS_PK</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9557DDE-7915-404C-9BC3-A7B29141601D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E8E3288-C9D1-4B22-0123-3EE7A6AFDC7C" name="PROJECT_COST_ADDERS_UK1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PROJECT_COST_ADDERS_UK1</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65906464-279A-D923-91A3-1C9D34B9F118"/>
+<colUsage columnID="66157B0D-CC18-9ACA-44DB-9C4249C22F26"/>
+<colUsage columnID="F1FDAE3F-6CE3-151F-BEAC-250368E8D74D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7A3B1B4-9402-1015-8C3D-01A6D4C8FB19" name="PROJECT_COST_ADDERS_PK">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PROJECT_COST_ADDERS_PK</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9557DDE-7915-404C-9BC3-A7B29141601D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E167544-959F-CAC2-D423-0F661CF75117" name="PROJECT_COST_ADDERS_UK1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PROJECT_COST_ADDERS_UK1</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65906464-279A-D923-91A3-1C9D34B9F118"/>
+<colUsage columnID="66157B0D-CC18-9ACA-44DB-9C4249C22F26"/>
+<colUsage columnID="F1FDAE3F-6CE3-151F-BEAC-250368E8D74D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98485FFB-7D76-4180-B586-4E6AEC032D21" name="PROJECT_COST_ADDERS_PROJE_FK1">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65906464-279A-D923-91A3-1C9D34B9F118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INV_ADD_POST_DEL" directorySegmentName="seg_0" id="C7B538DE-7164-4770-F456-E67944259851">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INV_ADD_POST_DEL</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>DELETE</actions>
+<body>BEGIN&lt;br/&gt;  UPDATE INVOICE_HEADERS&lt;br/&gt;  SET AMOUNT = NVL(AMOUNT, 0) - NVL(:OLD.LINE_AMOUNT, 0)&lt;br/&gt;  WHERE ID   = :OLD.INV_HEA_ID;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>306BE389-3BCD-DAA6-7866-EF6A8FD7DFE3</table>
+</TriggerOraclev10g>

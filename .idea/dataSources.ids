@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails ReferenceApplication: development" uuid="9262e8fb-4d13-4a05-98cd-0ff087ff8491">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ReferenceApplication: test" uuid="899373d7-97d2-46a8-b958-8b7206448f7f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ReferenceApplication: production" uuid="7ec70a0d-07a1-4d03-a842-43547929f42d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Newage: development" uuid="68b7252b-9448-4947-b065-6f8c94573ed9">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Newage: test" uuid="48bdcca5-c8ca-4c3f-be8f-e427e99b0395">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Newage: production" uuid="113769a7-7c1a-429d-b6ec-9092ef52ee95">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

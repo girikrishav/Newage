@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2FD856F2-B5BF-98DC-61E9-885734785409" name="TIMESHEETS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>TIMESHEETS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C1A6E031-DB28-4C9B-9A9B-9054ADC829A5">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FOR_DATE" id="DDD423CB-9EAF-6B15-249D-A212E412D31A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>FOR_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOURS" id="26750F97-494A-F552-FCAD-7ECDC8C251A0">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>HOURS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="E9B6C3DA-6EF3-1B23-D937-760D3370AEB2">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_USE_ID" id="864CEB51-F065-6662-A54A-654AC8962820">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>PRO_USE_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>00F2213E-ED40-3FCE-1771-DCCA202DE2BE</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0093574-11BE-36A1-E5A5-0698189A8054" referredColumn="00F2213E-ED40-3FCE-1771-DCCA202DE2BE"/>
+</associations>
+</Column>
+<Column name="VAC_ID" id="C60D857D-C111-3147-D0F0-FCD8DFF992F0">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>VAC_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>17694735-C85A-7CA3-FF17-A66ED68A6D96</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7B7C497-0808-E7CA-7C98-072BD97A91FF" referredColumn="17694735-C85A-7CA3-FF17-A66ED68A6D96"/>
+</associations>
+</Column>
+<Column name="AUTO_COMPUTE_HOURS" id="AF22A6B1-7054-B6D6-1B14-1A6C441CD714">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>TIMESHEETS</sourceObjSchema>
+<sourceObjName>AUTO_COMPUTE_HOURS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10263B0D-5B76-373F-6EC5-FB32702F09EF" name="XPKTIMESHEETS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKTIMESHEETS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1A6E031-DB28-4C9B-9A9B-9054ADC829A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3353AAA5-4BE7-6A1F-A192-A948FC860FFC" name="XPKTIMESHEETS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKTIMESHEETS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1A6E031-DB28-4C9B-9A9B-9054ADC829A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="989B9932-77FB-729F-0D2A-C58B50CBAC89" name="XAK1TIMESHEETS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XAK1TIMESHEETS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864CEB51-F065-6662-A54A-654AC8962820"/>
+<colUsage columnID="DDD423CB-9EAF-6B15-249D-A212E412D31A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3178788-504C-86DA-6A9C-9FBE9D2F5715" name="R_55">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864CEB51-F065-6662-A54A-654AC8962820"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="066C5A09-1CD3-DEE2-3AD7-4EDECE0047F0" name="TIMESHEETS_FK1">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C60D857D-C111-3147-D0F0-FCD8DFF992F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

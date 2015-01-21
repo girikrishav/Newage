@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1150278-8008-E545-8595-E4F1792AF015" name="INVOICE_ADDER_AUDIT_INVOI_FK2">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INVOICE_ADDER_AUDIT_INVOI_FK2</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<containerWithKeyObject>2BA47689-39CB-E2CF-C716-8C04C7890144</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>C929850E-E3C2-9F7F-7C8D-01AFB0B407CF</localFKIndex>
+<keyObject>63A0E2C1-4EE5-C027-5358-ACD7EA904A0E</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

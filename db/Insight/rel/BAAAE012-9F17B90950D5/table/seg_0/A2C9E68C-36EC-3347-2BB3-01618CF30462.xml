@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2C9E68C-36EC-3347-2BB3-01618CF30462" name="CAN_PERUSE_DATA_VIEW">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>CAN_PERUSE_DATA_VIEW</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<typeID>4</typeID>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DATA_OWNER" id="1EAA11EC-0DD5-8D9F-EF68-0E461D7FBE89">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>CAN_PERUSE_DATA_VIEW</sourceObjSchema>
+<sourceObjName>DATA_OWNER</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_REQUESTOR" id="7B295BA1-A6B2-9E7E-749C-27246598B121">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>CAN_PERUSE_DATA_VIEW</sourceObjSchema>
+<sourceObjName>DATA_REQUESTOR</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAN_PERUSE_DATA" id="294EB486-379C-7FA3-6004-7A82470899EC">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>CAN_PERUSE_DATA_VIEW</sourceObjSchema>
+<sourceObjName>CAN_PERUSE_DATA</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

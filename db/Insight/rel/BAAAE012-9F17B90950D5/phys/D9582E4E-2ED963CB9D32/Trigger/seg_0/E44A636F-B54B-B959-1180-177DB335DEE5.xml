@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TEC_USE_PRE_INS_UPD" directorySegmentName="seg_0" id="E44A636F-B54B-B959-1180-177DB335DEE5">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>TEC_USE_PRE_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>DECLARE PRAGMA AUTONOMOUS_TRANSACTION;&lt;br/&gt;  BEGIN&lt;br/&gt;    XRAYLOGIC.PRIMARY_SKILL_CHECK(:NEW.USE_ID, :NEW.PRIMARY_SKILL);&lt;br/&gt;  END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>C3120C2D-032B-4405-98C1-2AC0BDB12B97</table>
+</TriggerOraclev10g>

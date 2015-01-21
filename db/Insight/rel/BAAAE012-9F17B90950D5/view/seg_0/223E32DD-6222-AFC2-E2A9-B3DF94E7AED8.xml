@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="223E32DD-6222-AFC2-E2A9-B3DF94E7AED8" name="INVOICE_PROJECTS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INVOICE_PROJECTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW INVOICE_PROJECTS&lt;br/&gt;AS &lt;br/&gt;SELECT &apos;[&apos; || XRAYLOGIC.GET_PROJECTS_IN_INVOICE(ID) || &apos;] [&apos; || ID || &apos;] [&apos; || TO_CHAR(INVOICE_DATE, &apos;DD-Mon-YYYY&apos;) || &apos;] [&apos; || TO_CHAR(AMOUNT, &apos;FML999G999G999G999G990D00&apos;) || &apos;] [&apos; || DESCRIPTION || &apos;]&apos;  DESCRIPTION, ID &lt;br/&gt;FROM INVOICE_HEADERS&lt;br/&gt;ORDER BY DESCRIPTION</userDefinedSQL>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DESCRIPTION" id="09BCB25A-1C1C-790B-4630-B58108215BA5">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_PROJECTS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>DESCRIPTION</alias>
+<dataType>VARCHAR2 (4000)</dataType>
+<headerAlias>DESCRIPTION</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID" id="CDF36CDE-81BD-FB2D-1C81-88D69AD05078">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>INVOICE_PROJECTS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

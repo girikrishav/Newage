@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="AAE8D082-B81B-72C3-864B-59E8766EB04C" name="WEEK_RANGE_ROWS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>WEEK_RANGE_ROWS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW WEEK_RANGE_ROWS&lt;br/&gt;AS &lt;br/&gt;select &quot;DATE_ROW&quot;&lt;br/&gt;from date_range_rows&lt;br/&gt;where mod(date_row - (select min(date_row) from date_range_rows),7)=0</userDefinedSQL>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATE_ROW" id="8B22C111-310A-6F30-89F6-59BACC70FC50">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>WEEK_RANGE_ROWS</sourceObjSchema>
+<sourceObjName>DATE_ROW</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>DATE_ROW</alias>
+<dataType>DATE (8)</dataType>
+<headerAlias>DATE_ROW</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

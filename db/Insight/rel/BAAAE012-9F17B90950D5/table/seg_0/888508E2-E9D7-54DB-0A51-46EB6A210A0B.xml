@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="888508E2-E9D7-54DB-0A51-46EB6A210A0B" name="DELIVERY_MILESTONE_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>DELIVERY_MILESTONE_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5350366A-BE0D-E4EC-A289-6E949AFB41E1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="D6B20FDC-862B-AB04-74A1-A0697ECD9EA9">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="B68F15E8-01E9-97D7-15B7-89A5CBCB9B8C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DUE_DATE" id="3A044CAB-5853-B91F-D501-74CDCDBDE0F8">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>DUE_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_REMINDER_DATE" id="E2242027-991C-7128-9EE8-9CDA39D870EF">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>LAST_REMINDER_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTUAL_COMPLETION_DATE" id="9343DDC2-C2F8-52D0-5AD7-9CD3D3167E4B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>ACTUAL_COMPLETION_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="523DB91F-2398-D1BC-4F34-88162D541264">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_ID" id="FF2CAB5E-407A-A363-8F8E-5239B0D78A25">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>PRO_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>B7E1B41D-4D8E-F2A1-6463-BA353E221301</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B23765A-8B41-273E-A7D8-3FAF53076738" referredColumn="B7E1B41D-4D8E-F2A1-6463-BA353E221301"/>
+</associations>
+</Column>
+<Column name="AUDIT_LOGIN" id="59E594E6-521D-170E-594C-0D85E5E9FB15">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>AUDIT_LOGIN</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUDIT_DATE" id="FCE9A8EF-F14B-734A-6532-A5B25CA8E9C7">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>AUDIT_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEL_MIL_ID" id="EBD3291F-30F6-6D1D-EEEF-4D0E50E73207">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DELIVERY_MILESTONE_AUDIT</sourceObjSchema>
+<sourceObjName>DEL_MIL_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>06CBDE8B-6A7D-9F4D-A7CF-03DE87B015CE</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73480EA3-2BA3-460F-E7FD-74E70FE533CB" referredColumn="06CBDE8B-6A7D-9F4D-A7CF-03DE87B015CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D797776B-FE87-95B7-D2E3-E06656310D45" name="XPKDELIVERY_MILESTONE_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKDELIVERY_MILESTONE_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5350366A-BE0D-E4EC-A289-6E949AFB41E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81BBEE1F-2E50-8F6C-26E2-A241E1F20518" name="XPKDELIVERY_MILESTONE_AUDIT">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKDELIVERY_MILESTONE_AUDIT</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5350366A-BE0D-E4EC-A289-6E949AFB41E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DE93023-20A8-3FED-5C8A-303941B034EE" name="R_70">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF2CAB5E-407A-A363-8F8E-5239B0D78A25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E9E69DC-9C1B-19CC-2B36-9339EE0BDCF6" name="R_71">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBD3291F-30F6-6D1D-EEEF-4D0E50E73207"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

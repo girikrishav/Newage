@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="USE_PRE_INS_UPD" directorySegmentName="seg_0" id="D0A9DD3F-44D1-EADC-EF96-8235F631C81D">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>USE_PRE_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  IF :NEW.LEAVING_DATE IS NOT NULL THEN&lt;br/&gt;--    SELECT ID INTO :NEW.ACTIVE FROM FLAG_STATUSES WHERE UPPER(NAME) = &apos;Y&apos;;&lt;br/&gt;--  ELSE&lt;br/&gt;    SELECT ID INTO :NEW.ACTIVE FROM FLAG_STATUSES WHERE UPPER(NAME) = &apos;N&apos;;&lt;br/&gt;  END IF;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>8F5316BA-50B5-ABAE-200C-1A2094BF9B39</table>
+</TriggerOraclev10g>

@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="96D68F19-02D4-F49F-63A5-737802EED07A" name="DATE_RANGE_ROWS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>DATE_RANGE_ROWS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW DATE_RANGE_ROWS&lt;br/&gt;AS &lt;br/&gt;select to_date(&apos;01-jan-1990&apos;,&apos;dd-mon-yyyy&apos;) + rownum -1 date_row&lt;br/&gt;from all_objects&lt;br/&gt;where rownum &lt;= &lt;br/&gt;to_date(&apos;31-dec-2100&apos;,&apos;dd-mon-yyyy&apos;)-to_date(&apos;01-jan-1990&apos;,&apos;dd-mon-yyyy&apos;)+1</userDefinedSQL>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATE_ROW" id="7C496A2C-781E-C69C-B22D-E8996366854B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>DATE_RANGE_ROWS</sourceObjSchema>
+<sourceObjName>DATE_ROW</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>DATE_ROW</alias>
+<dataType>DATE (8)</dataType>
+<headerAlias>DATE_ROW</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

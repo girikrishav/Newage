@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TIM_POST_INS_UPD" directorySegmentName="seg_0" id="FB779DB3-9228-A1AB-13F0-62505EDA2E00">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>TIM_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>DECLARE V_ASSIGNMENT_START DATE;&lt;br/&gt;  V_ASSIGNMENT_END                                                           DATE;&lt;br/&gt;  BEGIN&lt;br/&gt;    SELECT START_DATE,&lt;br/&gt;      END_DATE&lt;br/&gt;    INTO V_ASSIGNMENT_START,&lt;br/&gt;      V_ASSIGNMENT_END&lt;br/&gt;    FROM PROJECT_USERS&lt;br/&gt;    WHERE ID = :NEW.PRO_USE_ID;&lt;br/&gt;    XRAYLOGIC.TIMESHEET_DATE_CHECK(:NEW.FOR_DATE, V_ASSIGNMENT_START, V_ASSIGNMENT_END);&lt;br/&gt;    INSERT&lt;br/&gt;    INTO TIMESHEET_AUDIT&lt;br/&gt;      (&lt;br/&gt;        ID,&lt;br/&gt;        FOR_DATE,&lt;br/&gt;        HOURS,&lt;br/&gt;        COMMENTS,&lt;br/&gt;        PRO_USE_ID,&lt;br/&gt;        AUDIT_LOGIN,&lt;br/&gt;        AUDIT_DATE,&lt;br/&gt;        TIM_ID,&lt;br/&gt;        VAC_ID&lt;br/&gt;      )&lt;br/&gt;    SELECT TIM_AUD_SEQ.NEXTVAL,&lt;br/&gt;      :NEW.FOR_DATE,&lt;br/&gt;      :NEW.HOURS,&lt;br/&gt;      :NEW.COMMENTS,&lt;br/&gt;      :NEW.PRO_USE_ID,&lt;br/&gt;      NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;      SYSDATE,&lt;br/&gt;      :NEW.ID,&lt;br/&gt;      :NEW.VAC_ID&lt;br/&gt;    FROM DUAL;&lt;br/&gt;    UPDATE PROJECT_USERS&lt;br/&gt;    SET CONSUMED_HOURS = GREATEST(NVL(CONSUMED_HOURS, 0) - NVL(:OLD.HOURS, 0) + NVL(:NEW.HOURS, 0), 0),&lt;br/&gt;    HOURS_PER_DAY = NVL(:NEW.AUTO_COMPUTE_HOURS, HOURS_PER_DAY)&lt;br/&gt;    WHERE ID           = :NEW.PRO_USE_ID;&lt;br/&gt;  END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>2FD856F2-B5BF-98DC-61E9-885734785409</table>
+</TriggerOraclev10g>

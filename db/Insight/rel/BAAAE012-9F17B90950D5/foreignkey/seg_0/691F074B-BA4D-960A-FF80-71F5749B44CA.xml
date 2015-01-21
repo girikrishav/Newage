@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="691F074B-BA4D-960A-FF80-71F5749B44CA" name="PIPELINE_AUDIT_BUSINESS_U_FK1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PIPELINE_AUDIT_BUSINESS_U_FK1</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<containerWithKeyObject>0332B41D-9882-FF41-EF14-E564AC7F7F23</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>BBA62034-320D-5591-85C0-CA38B290954A</localFKIndex>
+<keyObject>9B9045BB-D686-4BC3-A739-C421A3A07E57</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

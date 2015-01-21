@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="94A8926A-24BF-55AB-610B-847298FD5604" name="R_85">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>R_85</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<containerWithKeyObject>8BBAB620-3EC4-9418-62A0-57A4BEC0F14D</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>3C33FDC9-2815-4F03-F891-50D6F59E94E1</localFKIndex>
+<keyObject>7A0653B8-119B-E35F-9565-30A212A335DF</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

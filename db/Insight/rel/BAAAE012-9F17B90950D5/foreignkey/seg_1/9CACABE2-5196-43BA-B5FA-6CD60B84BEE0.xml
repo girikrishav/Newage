@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="9CACABE2-5196-43BA-B5FA-6CD60B84BEE0" name="VACATION_REASONS_BUSINESS_FK1">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>VACATION_REASONS_BUSINESS_FK1</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<containerWithKeyObject>957B4791-232D-5344-9988-9C743E545318</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>F3F262E1-2EF2-1450-4BCB-0029CF0E46C7</localFKIndex>
+<keyObject>9B9045BB-D686-4BC3-A739-C421A3A07E57</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

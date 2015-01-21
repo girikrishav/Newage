@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="PRO_USE_PRE_INS" directorySegmentName="seg_0" id="C1E9EC17-A306-6194-BCDA-25A92E977DD9">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PRO_USE_PRE_INS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT</actions>
+<body>DECLARE V_DATE DATE;&lt;br/&gt;  BEGIN&lt;br/&gt;    IF :NEW.AUTO_COMPUTE IS NOT NULL THEN&lt;br/&gt;      :NEW.COMMENTS := &apos;SKIP ALLOCATION CHECK&apos;;&lt;br/&gt;    END IF;&lt;br/&gt;    V_DATE := :NEW.START_DATE;&lt;br/&gt;    LOOP&lt;br/&gt;      EXIT&lt;br/&gt;    WHEN V_DATE                                        &gt; :NEW.END_DATE;&lt;br/&gt;      IF INSTR(:NEW.COMMENTS, &apos;SKIP ALLOCATION CHECK&apos;) = 0 THEN&lt;br/&gt;        XRAYLOGIC.USER_ALLOCATION_CHECKS(:NEW.USE_ID, :NEW.START_DATE, :NEW.END_DATE, :NEW.HOURS_PER_DAY);&lt;br/&gt;      END IF;&lt;br/&gt;      V_DATE := V_DATE + 1;&lt;br/&gt;    END LOOP;&lt;br/&gt;    :NEW.COST_RATE    := XRAYLOGIC.GET_SKILL_COST_RATE(:NEW.TEC_ID, :NEW.USE_ID, :NEW.START_DATE);&lt;br/&gt;    IF :NEW.COST_RATE IS NULL THEN&lt;br/&gt;      :NEW.COST_RATE  := XRAYLOGIC.GET_USER_COST_RATE(:NEW.USE_ID, :NEW.START_DATE);&lt;br/&gt;    END IF;&lt;br/&gt;    :NEW.BILLING_RATE    := XRAYLOGIC.GET_SKILL_BILLING_RATE(:NEW.TEC_ID, :NEW.USE_ID, :NEW.START_DATE);&lt;br/&gt;    IF :NEW.BILLING_RATE IS NULL THEN&lt;br/&gt;      :NEW.BILLING_RATE  := XRAYLOGIC.GET_USER_BILLING_RATE(:NEW.USE_ID, :NEW.START_DATE);&lt;br/&gt;    END IF;&lt;br/&gt;  END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>3CCFD98B-CFD8-2F7D-45CE-F676541A5E6A</table>
+</TriggerOraclev10g>

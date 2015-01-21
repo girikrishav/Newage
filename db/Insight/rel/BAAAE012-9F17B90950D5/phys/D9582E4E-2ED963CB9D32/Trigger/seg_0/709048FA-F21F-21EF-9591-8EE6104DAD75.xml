@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="PIP_POST_INS_UPD" directorySegmentName="seg_0" id="709048FA-F21F-21EF-9591-8EE6104DAD75">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PIP_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN XRAYLOGIC.START_END_DATE_CHECK(:NEW.EXPECTED_START, :NEW.EXPECTED_END);&lt;br/&gt;  INSERT&lt;br/&gt;  INTO PIPELINE_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      CLIENT_NAME,&lt;br/&gt;      PROJECT_NAME,&lt;br/&gt;      EXPECTED_START,&lt;br/&gt;      EXPECTED_END,&lt;br/&gt;      EXPECTED_VALUE,&lt;br/&gt;      PROJECT_DESCRIPTION,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      PRO_TYP_ID,&lt;br/&gt;      PIP_STA_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      SALES_PERSON_ID,&lt;br/&gt;      ESTIMATOR_ID,&lt;br/&gt;      ENGAGEMENT_MANAGER_ID,&lt;br/&gt;      DELIVERY_MANAGER_ID,&lt;br/&gt;      BUS_UNI_ID,&lt;br/&gt;      PIP_ID&lt;br/&gt;    )&lt;br/&gt;  SELECT PIP_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.CLIENT_NAME,&lt;br/&gt;    :NEW.PROJECT_NAME,&lt;br/&gt;    :NEW.EXPECTED_START,&lt;br/&gt;    :NEW.EXPECTED_END,&lt;br/&gt;    :NEW.EXPECTED_VALUE,&lt;br/&gt;    :NEW.PROJECT_DESCRIPTION,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.PRO_TYP_ID,&lt;br/&gt;    :NEW.PIP_STA_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.SALES_PERSON_ID,&lt;br/&gt;    :NEW.ESTIMATOR_ID,&lt;br/&gt;    :NEW.ENGAGEMENT_MANAGER_ID,&lt;br/&gt;    :NEW.DELIVERY_MANAGER_ID,&lt;br/&gt;    :NEW.BUS_UNI_ID,&lt;br/&gt;    :NEW.ID&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>CF01145D-C50F-0EC0-C74A-EE601CED0B54</table>
+</TriggerOraclev10g>

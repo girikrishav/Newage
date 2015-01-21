@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Insight" id="73ED970E-2E67-B71F-66CA-371EE39CCFEE" version="3.5">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:29:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>73ED970E-2E67-B71F-66CA-371EE39CCFEE</designId>
+</OSDM_Design>

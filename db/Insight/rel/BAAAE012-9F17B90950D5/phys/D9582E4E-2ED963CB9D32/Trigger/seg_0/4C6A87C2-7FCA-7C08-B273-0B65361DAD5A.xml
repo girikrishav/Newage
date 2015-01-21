@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="STA_REQ_POST_INS_UPD" directorySegmentName="seg_0" id="4C6A87C2-7FCA-7C08-B273-0B65361DAD5A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>STA_REQ_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN &lt;br/&gt;  XRAYLOGIC.START_END_DATE_CHECK(:NEW.START_DATE, :NEW.END_DATE);&lt;br/&gt;  XRAYLOGIC.CHECK_STAFFING_DATE_RANGE(:NEW.PRO_ID, :NEW.START_DATE, :NEW.END_DATE);&lt;br/&gt;  INSERT&lt;br/&gt;  INTO STAFFING_REQUIREMENT_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      START_DATE,&lt;br/&gt;      END_DATE,&lt;br/&gt;      NUMBER_REQUIRED,&lt;br/&gt;      HOURS_PER_DAY,&lt;br/&gt;      FULFILLED,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      PRO_ID,&lt;br/&gt;      DES_ID,&lt;br/&gt;      TEC_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      STA_REQ_ID&lt;br/&gt;    )&lt;br/&gt;  SELECT STA_REQ_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.START_DATE,&lt;br/&gt;    :NEW.END_DATE,&lt;br/&gt;    :NEW.NUMBER_REQUIRED,&lt;br/&gt;    :NEW.HOURS_PER_DAY,&lt;br/&gt;    :NEW.FULFILLED,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.PRO_ID,&lt;br/&gt;    :NEW.DES_ID,&lt;br/&gt;    :NEW.TEC_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.ID&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>29CBE6F7-0935-102D-6D12-3C2269D4F59D</table>
+</TriggerOraclev10g>

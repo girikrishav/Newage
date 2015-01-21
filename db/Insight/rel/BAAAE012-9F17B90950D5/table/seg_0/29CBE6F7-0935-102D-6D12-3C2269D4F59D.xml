@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29CBE6F7-0935-102D-6D12-3C2269D4F59D" name="STAFFING_REQUIREMENTS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>STAFFING_REQUIREMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6059D9B8-BCD5-7EA6-84F3-01ED11CC438F">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="286F9FA2-103A-64B0-AE45-72BC30B5871B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="4900CA03-CCDA-5534-AE93-1891B3DB5F86">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMBER_REQUIRED" id="929D2FFC-B4D0-1D46-040A-CC22BB2875B3">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>NUMBER_REQUIRED</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOURS_PER_DAY" id="69FB174A-CECB-B54D-0977-49A9AE5EE989">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>HOURS_PER_DAY</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FULFILLED" id="F2918590-0CB9-FC31-1371-564378E07B0E">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>FULFILLED</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="2EE870F9-A451-76C3-BDAD-DEDDD8427581">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_ID" id="47688CB2-A8BE-B5A3-73BF-7925C60322B3">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>PRO_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>B7E1B41D-4D8E-F2A1-6463-BA353E221301</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D877AF7-5AA3-152C-1E7A-1D249B2C05A6" referredColumn="B7E1B41D-4D8E-F2A1-6463-BA353E221301"/>
+</associations>
+</Column>
+<Column name="DES_ID" id="CE4EEE3A-FB75-0F61-6225-75D852D42136">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>DES_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEC_ID" id="A27BA495-EC36-CF78-A775-2973857BDDFC">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>STAFFING_REQUIREMENTS</sourceObjSchema>
+<sourceObjName>TEC_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>5E872F8C-4E6A-2B6C-91C5-CB201B52202D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F393C18F-719C-959B-AC48-26A7AA8F3C84" referredColumn="5E872F8C-4E6A-2B6C-91C5-CB201B52202D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81E8D1C7-DE1D-4FEE-7530-D40BED40BEC8" name="XPKSTAFFING_REQUIREMENTS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKSTAFFING_REQUIREMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6059D9B8-BCD5-7EA6-84F3-01ED11CC438F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5015CD6A-44E1-FD1D-AC6C-7AB551C089C0" name="XPKSTAFFING_REQUIREMENTS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKSTAFFING_REQUIREMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6059D9B8-BCD5-7EA6-84F3-01ED11CC438F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3F627C0-3F3D-22FA-54DD-A510F19B7336" name="XAK1STAFFING_REQUIREMENTS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XAK1STAFFING_REQUIREMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47688CB2-A8BE-B5A3-73BF-7925C60322B3"/>
+<colUsage columnID="CE4EEE3A-FB75-0F61-6225-75D852D42136"/>
+<colUsage columnID="A27BA495-EC36-CF78-A775-2973857BDDFC"/>
+<colUsage columnID="286F9FA2-103A-64B0-AE45-72BC30B5871B"/>
+<colUsage columnID="4900CA03-CCDA-5534-AE93-1891B3DB5F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDD9458E-F38B-1D50-AC19-A202AB0796A3" name="R_45">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47688CB2-A8BE-B5A3-73BF-7925C60322B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38977D1E-A303-A26A-95F6-22426795F8AC" name="R_47">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A27BA495-EC36-CF78-A775-2973857BDDFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

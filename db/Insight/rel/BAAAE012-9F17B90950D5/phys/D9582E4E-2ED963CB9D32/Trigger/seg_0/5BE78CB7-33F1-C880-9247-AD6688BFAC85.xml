@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="USE_POST_INS_UPD" directorySegmentName="seg_0" id="5BE78CB7-33F1-C880-9247-AD6688BFAC85">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>USE_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  XRAYLOGIC.START_END_DATE_CHECK(:NEW.JOINING_DATE, :NEW.LEAVING_DATE); &lt;br/&gt;  INSERT&lt;br/&gt;  INTO USER_AUDIT&lt;br/&gt;    (&lt;br/&gt;      FIRST_NAME,&lt;br/&gt;      MIDDLE_NAME,&lt;br/&gt;      LAST_NAME,&lt;br/&gt;      EMAIL_ADDRESS,&lt;br/&gt;      EMPLOYEE_ID,&lt;br/&gt;      ACTIVE,&lt;br/&gt;      JOINING_DATE,&lt;br/&gt;      LEAVING_DATE,&lt;br/&gt;      BILLING_RATE,&lt;br/&gt;      COST_RATE,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      USE_ID,&lt;br/&gt;      BUS_UNI_ID,&lt;br/&gt;      DEP_ID,&lt;br/&gt;      DES_ID,&lt;br/&gt;      MANAGER_ID,&lt;br/&gt;      ID,&lt;br/&gt;      USE_ROL_ID,&lt;br/&gt;      EFFECTIVE_DATE&lt;br/&gt;    )&lt;br/&gt;  SELECT :NEW.FIRST_NAME,&lt;br/&gt;    :NEW.MIDDLE_NAME,&lt;br/&gt;    :NEW.LAST_NAME,&lt;br/&gt;    :NEW.EMAIL_ADDRESS,&lt;br/&gt;    :NEW.EMPLOYEE_ID,&lt;br/&gt;    :NEW.ACTIVE,&lt;br/&gt;    :NEW.JOINING_DATE,&lt;br/&gt;    :NEW.LEAVING_DATE,&lt;br/&gt;    :NEW.BILLING_RATE,&lt;br/&gt;    :NEW.COST_RATE,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.ID,&lt;br/&gt;    :NEW.BUS_UNI_ID,&lt;br/&gt;    :NEW.DEP_ID,&lt;br/&gt;    :NEW.DES_ID,&lt;br/&gt;    :NEW.MANAGER_ID,&lt;br/&gt;    USE_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.USE_ROL_ID,&lt;br/&gt;    :NEW.EFFECTIVE_DATE&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>8F5316BA-50B5-ABAE-200C-1A2094BF9B39</table>
+</TriggerOraclev10g>

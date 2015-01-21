@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PackageOracle class="oracle.dbtools.crest.model.design.storage.oracle.PackageOracle" name="XRAYDATA" directorySegmentName="seg_0" id="21EB1E1C-30AE-1BD7-6E7B-3A7D548FC5ED">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XRAYDATA</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<source>CREATE OR REPLACE PACKAGE XRAYDEV.XRAYDATA &lt;br/&gt;AS&lt;br/&gt;FUNCTION GET_CURRENT_USER_ID&lt;br/&gt;  RETURN INTEGER;&lt;br/&gt;FUNCTION CAN_PERUSE_DATA_REFRESH(&lt;br/&gt;    P_DATA_OWNER_ID     IN INTEGER,&lt;br/&gt;    P_DATA_REQUESTOR_ID IN INTEGER DEFAULT GET_CURRENT_USER_ID)&lt;br/&gt;  RETURN VARCHAR2;&lt;br/&gt;END XRAYDATA;</source>
+<body class="oracle.dbtools.crest.model.design.storage.oracle.PackageBodyOracle" name="XRAYDATA" id="21EB1E1C-30AE-1BD7-6E7B-3A7D548FC5ED">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XRAYDATA</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<source>CREATE OR REPLACE PACKAGE BODY XRAYDEV.XRAYDATA &lt;br/&gt;AS&lt;br/&gt;FUNCTION GET_CURRENT_USER_ID&lt;br/&gt;  RETURN INTEGER&lt;br/&gt;AS&lt;br/&gt;  V_RESULT INTEGER;&lt;br/&gt;BEGIN&lt;br/&gt;  SELECT ID&lt;br/&gt;  INTO V_RESULT&lt;br/&gt;  FROM USERS&lt;br/&gt;  WHERE UPPER(EMAIL_ADDRESS) = UPPER(APEX_UTIL.GET_EMAIL( APEX_UTIL.GET_USERNAME(APEX_UTIL.GET_CURRENT_USER_ID))) ;&lt;br/&gt;  RETURN V_RESULT;&lt;br/&gt;END GET_CURRENT_USER_ID;&lt;br/&gt;FUNCTION CAN_PERUSE_DATA_REFRESH(&lt;br/&gt;    P_DATA_OWNER_ID     IN INTEGER,&lt;br/&gt;    P_DATA_REQUESTOR_ID IN INTEGER DEFAULT GET_CURRENT_USER_ID)&lt;br/&gt;  RETURN VARCHAR2&lt;br/&gt;AS&lt;br/&gt;  V_DATA_REQUESTOR_ID_RANK NUMBER;&lt;br/&gt;  V_DATA_OWNER_ID_RANK     NUMBER;&lt;br/&gt;  V_RESULT                 VARCHAR2(1) := &apos;N&apos;;&lt;br/&gt;BEGIN&lt;br/&gt;  IF P_DATA_OWNER_ID = P_DATA_REQUESTOR_ID THEN&lt;br/&gt;    V_RESULT        := &apos;Y&apos;;&lt;br/&gt;  ELSE&lt;br/&gt;    FOR C1REC IN&lt;br/&gt;    (SELECT ID&lt;br/&gt;    FROM USERS&lt;br/&gt;      START WITH MANAGER_ID = P_DATA_OWNER_ID&lt;br/&gt;      CONNECT BY PRIOR ID   = MANAGER_ID&lt;br/&gt;    )&lt;br/&gt;    LOOP&lt;br/&gt;      IF C1REC.ID = P_DATA_OWNER_ID THEN&lt;br/&gt;        V_RESULT := &apos;Y&apos;;&lt;br/&gt;        EXIT;&lt;br/&gt;      END IF;&lt;br/&gt;    END LOOP;&lt;br/&gt;    SELECT RANK&lt;br/&gt;    INTO V_DATA_REQUESTOR_ID_RANK&lt;br/&gt;    FROM DESIGNATIONS&lt;br/&gt;    WHERE ID =&lt;br/&gt;      ( SELECT DES_ID FROM USERS WHERE ID = P_DATA_REQUESTOR_ID&lt;br/&gt;      );&lt;br/&gt;    SELECT RANK&lt;br/&gt;    INTO V_DATA_OWNER_ID_RANK&lt;br/&gt;    FROM DESIGNATIONS&lt;br/&gt;    WHERE ID =&lt;br/&gt;      ( SELECT DES_ID FROM USERS WHERE ID = P_DATA_OWNER_ID&lt;br/&gt;      );&lt;br/&gt;    IF V_DATA_REQUESTOR_ID_RANK &lt; V_DATA_OWNER_ID_RANK THEN&lt;br/&gt;      V_RESULT                 := &apos;Y&apos;;&lt;br/&gt;    END IF;&lt;br/&gt;  END IF;&lt;br/&gt;  RETURN V_RESULT;&lt;br/&gt;EXCEPTION&lt;br/&gt;WHEN OTHERS THEN&lt;br/&gt;  RETURN V_RESULT;&lt;br/&gt;END CAN_PERUSE_DATA_REFRESH;&lt;br/&gt;END XRAYDATA;</source>
+</body>
+</PackageOracle>

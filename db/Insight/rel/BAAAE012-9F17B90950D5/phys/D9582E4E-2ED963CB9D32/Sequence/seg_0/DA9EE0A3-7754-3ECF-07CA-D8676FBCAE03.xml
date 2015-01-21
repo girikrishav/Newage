@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="PAY_DET_SEQ" directorySegmentName="seg_0" id="DA9EE0A3-7754-3ECF-07CA-D8676FBCAE03">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PAY_DET_SEQ</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<cache>20</cache>
+<incrementBy>1</incrementBy>
+<maxValue>999999999999999999999999999</maxValue>
+<minValue>1</minValue>
+<user>42BF9B12-1809-88EE-330C-88F8510DCEFE</user>
+</SequenceOraclev10g>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="PAY_HEA_POST_INS_UPD" directorySegmentName="seg_0" id="BC888F7C-8534-CACC-9DF2-EB889AA78B9B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PAY_HEA_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  INSERT&lt;br/&gt;  INTO PAYMENT_HEADER_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      PAYMENT_DATE,&lt;br/&gt;      AMOUNT,&lt;br/&gt;      DESCRIPTION,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      PAY_STA_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      PAY_HEA_ID&lt;br/&gt;    )&lt;br/&gt;  SELECT PAY_HEA_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.PAYMENT_DATE,&lt;br/&gt;    :NEW.AMOUNT,&lt;br/&gt;    :NEW.DESCRIPTION,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.PAY_STA_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.ID&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>0356E55B-739A-8719-6985-CDBDF09B184E</table>
+</TriggerOraclev10g>

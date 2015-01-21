@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="58BE5267-C87A-2B72-63ED-F46C60E877F5" name="USER_ASSIGNED_HOURS_VIEW">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>USER_ASSIGNED_HOURS_VIEW</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW USER_ASSIGNED_HOURS_VIEW&lt;br/&gt;AS &lt;br/&gt;SELECT A.PRO_USE_ID,&lt;br/&gt;  A.USE_ID,&lt;br/&gt;  A.START_DATE,&lt;br/&gt;  A.END_DATE,&lt;br/&gt;  A.HOURS_PER_DAY&lt;br/&gt;FROM PROJECT_USER_AUDIT A&lt;br/&gt;WHERE A.PRO_ID NOT IN&lt;br/&gt;  (SELECT ID&lt;br/&gt;  FROM PROJECTS&lt;br/&gt;  WHERE PRO_TYP_ID = XRAYLOGIC.GET_DEFAULT_PROJECT_TYPE_ID&lt;br/&gt;  )&lt;br/&gt;AND A.EFFECTIVE_DATE =&lt;br/&gt;  (SELECT MAX(B.EFFECTIVE_DATE)&lt;br/&gt;  FROM PROJECT_USER_AUDIT B&lt;br/&gt;  WHERE B.USE_ID   = A.USE_ID&lt;br/&gt;  AND B.PRO_USE_ID = A.PRO_USE_ID&lt;br/&gt;  )&lt;br/&gt;AND A.AUDIT_DATE =&lt;br/&gt;  (SELECT MAX(B.AUDIT_DATE)&lt;br/&gt;  FROM PROJECT_USER_AUDIT B&lt;br/&gt;  WHERE B.USE_ID   = A.USE_ID&lt;br/&gt;  AND B.PRO_USE_ID = A.PRO_USE_ID&lt;br/&gt;  )</userDefinedSQL>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRO_USE_ID" id="230C21FF-6FD4-333F-31E7-FC0D174EEC3F">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>USER_ASSIGNED_HOURS_VIEW</sourceObjSchema>
+<sourceObjName>PRO_USE_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>PRO_USE_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>PRO_USE_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="USE_ID" id="D6D51A2A-E3AE-4F13-F6E8-EC9A8A13939B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>USER_ASSIGNED_HOURS_VIEW</sourceObjSchema>
+<sourceObjName>USE_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>USE_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>USE_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="START_DATE" id="A742A360-3AAD-5EC6-8A4E-70063DC019F6">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>USER_ASSIGNED_HOURS_VIEW</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>START_DATE</alias>
+<dataType>DATE (7)</dataType>
+<headerAlias>START_DATE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="END_DATE" id="8EAD83F4-94D2-3474-3C8A-17BD7C8BFB58">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>USER_ASSIGNED_HOURS_VIEW</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>END_DATE</alias>
+<dataType>DATE (7)</dataType>
+<headerAlias>END_DATE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HOURS_PER_DAY" id="A3CAD097-8E5E-A1A4-BFA0-F5A8760C7D07">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>USER_ASSIGNED_HOURS_VIEW</sourceObjSchema>
+<sourceObjName>HOURS_PER_DAY</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>HOURS_PER_DAY</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>HOURS_PER_DAY</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

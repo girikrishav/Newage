@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9B4F5E1-B205-2773-666A-C501E22E4F4B" name="HOLIDAYS">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>HOLIDAYS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4428CD49-54A0-13ED-9BCB-8DF30722942A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOLIDAY_NAME" id="C7A0AA31-0928-1A02-DE40-9A53ABFB1B0B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>HOLIDAY_NAME</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOLIDAY_DATE" id="A4B13200-DA26-F2FD-2D54-09304FCA7F91">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>HOLIDAY_DATE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOLIDAY_DESCRIPTION" id="2A704AD5-0310-10CC-DB59-B539E43DF7F6">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>HOLIDAY_DESCRIPTION</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="0B28D13A-0CC9-DCB1-B0EA-D22C2AB29F0C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUS_UNI_ID" id="ADD5AE23-E3A6-3725-FF34-8972FD215419">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>HOLIDAYS</sourceObjSchema>
+<sourceObjName>BUS_UNI_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>05D58EF1-F107-FF12-E86F-750DE1DA74CE</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F622CB09-031E-70F7-6F23-B12DF4EF21BD" referredColumn="05D58EF1-F107-FF12-E86F-750DE1DA74CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86013CEA-E33A-5BAB-0F8B-0393DB70F6D9" name="HOLIDAYS_PK">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>HOLIDAYS_PK</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4428CD49-54A0-13ED-9BCB-8DF30722942A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FC871A1-A819-74C9-68DA-98B7D7CDE968" name="HOLIDAYS_UK2">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>HOLIDAYS_UK2</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7A0AA31-0928-1A02-DE40-9A53ABFB1B0B"/>
+<colUsage columnID="A4B13200-DA26-F2FD-2D54-09304FCA7F91"/>
+<colUsage columnID="ADD5AE23-E3A6-3725-FF34-8972FD215419"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="299B66AA-980E-6ACA-A0F6-CEE2A9F9C6BA" name="HOLIDAYS_PK">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>HOLIDAYS_PK</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4428CD49-54A0-13ED-9BCB-8DF30722942A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3B999AB-48B6-7BD4-0C69-C2110BE761CA" name="HOLIDAYS_UK2">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>HOLIDAYS_UK2</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7A0AA31-0928-1A02-DE40-9A53ABFB1B0B"/>
+<colUsage columnID="A4B13200-DA26-F2FD-2D54-09304FCA7F91"/>
+<colUsage columnID="ADD5AE23-E3A6-3725-FF34-8972FD215419"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF51C8A5-7BAD-033B-79B7-0F01B5F7A6FE" name="HOLIDAYS_BUSINESS_UNITS_FK1">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADD5AE23-E3A6-3725-FF34-8972FD215419"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

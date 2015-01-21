@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="PRO_USE_POST_INS_UPD" directorySegmentName="seg_0" id="A3EBEDD4-5919-51CD-3EF5-DE5FCEE78432">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PRO_USE_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  XRAYLOGIC.START_END_DATE_CHECK(:NEW.START_DATE, :NEW.END_DATE);&lt;br/&gt;  XRAYLOGIC.CHECK_STAFFING_DATE_RANGE(:NEW.PRO_ID, :NEW.START_DATE, :NEW.END_DATE);&lt;br/&gt;  INSERT&lt;br/&gt;  INTO PROJECT_USER_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      START_DATE,&lt;br/&gt;      END_DATE,&lt;br/&gt;      HOURS_PER_DAY,&lt;br/&gt;      BILLING_RATE,&lt;br/&gt;      COST_RATE,&lt;br/&gt;      EFFORT_HOURS,&lt;br/&gt;      BILLED_HOURS,&lt;br/&gt;      DELIVERY_DUE_ALERT,&lt;br/&gt;      INVOICING_DUE_ALERT,&lt;br/&gt;      PAYMENT_DUE_ALERT,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      PRO_ID,&lt;br/&gt;      TEC_ID,&lt;br/&gt;      USE_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      DES_ID,&lt;br/&gt;      CONSUMED_HOURS,&lt;br/&gt;      PRO_USE_ID,&lt;br/&gt;      EFFECTIVE_DATE,&lt;br/&gt;      AUTO_COMPUTE&lt;br/&gt;    )&lt;br/&gt;  SELECT PRO_USE_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.START_DATE,&lt;br/&gt;    :NEW.END_DATE,&lt;br/&gt;    :NEW.HOURS_PER_DAY,&lt;br/&gt;    :NEW.BILLING_RATE,&lt;br/&gt;    :NEW.COST_RATE,&lt;br/&gt;    :NEW.EFFORT_HOURS,&lt;br/&gt;    :NEW.BILLED_HOURS,&lt;br/&gt;    :NEW.DELIVERY_DUE_ALERT,&lt;br/&gt;    :NEW.INVOICING_DUE_ALERT,&lt;br/&gt;    :NEW.PAYMENT_DUE_ALERT,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.PRO_ID,&lt;br/&gt;    :NEW.TEC_ID,&lt;br/&gt;    :NEW.USE_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.DES_ID,&lt;br/&gt;    :NEW.CONSUMED_HOURS,&lt;br/&gt;    :NEW.ID,&lt;br/&gt;    :NEW.EFFECTIVE_DATE,&lt;br/&gt;    :NEW.AUTO_COMPUTE&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>3CCFD98B-CFD8-2F7D-45CE-F676541A5E6A</table>
+</TriggerOraclev10g>

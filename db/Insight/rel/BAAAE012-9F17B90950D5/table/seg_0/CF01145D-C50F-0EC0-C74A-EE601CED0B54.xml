@@ -1,0 +1,358 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF01145D-C50F-0EC0-C74A-EE601CED0B54" name="PIPELINE">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>PIPELINE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:14 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="EAA517AE-2E5E-9EAB-C9B6-D4D58506BA8B">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENT_NAME" id="A5C5A495-7042-CA87-DB39-3373CA8C5F3E">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>CLIENT_NAME</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROJECT_NAME" id="24AF6D4A-A580-5AB7-8152-BC7B262AED50">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>PROJECT_NAME</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPECTED_START" id="C03047B8-4E1F-C63B-5796-AA105D4E5EC3">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>EXPECTED_START</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPECTED_END" id="25291043-02DF-F388-05AC-69121A67BA5A">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>EXPECTED_END</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPECTED_VALUE" id="9E8922E1-6536-FC86-7243-E2F88515F6E0">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>EXPECTED_VALUE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROJECT_DESCRIPTION" id="9B78FB0C-30B0-AFBA-9DE5-F7F8F7926DFC">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>PROJECT_DESCRIPTION</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="EDF264CA-58AF-45D4-4777-48D49448D451">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_TYP_ID" id="9FE58052-4503-F7E5-86C7-1B853F29210D">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>PRO_TYP_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>94AA35D3-A081-68C0-E68F-07C30A57861E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19C06DFF-61E5-ED68-20A4-0862A0BBD8BE" referredColumn="94AA35D3-A081-68C0-E68F-07C30A57861E"/>
+</associations>
+</Column>
+<Column name="PIP_STA_ID" id="9EE5EE2E-D45B-947B-2992-4782138FAA57">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>PIP_STA_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>1B9B3E19-3716-3874-7B2E-E11DE6BE0CAB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80850E96-6691-F291-E2D5-50E7101FEFFE" referredColumn="1B9B3E19-3716-3874-7B2E-E11DE6BE0CAB"/>
+</associations>
+</Column>
+<Column name="ESTIMATOR_ID" id="ECF05D19-9A1E-1704-7278-0C7EA997C876">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>ESTIMATOR_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>A4C53357-7EB9-E016-1E23-BA18F20F992F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="582C538F-6F42-6E14-0FD9-80C4D5BF5E65" referredColumn="A4C53357-7EB9-E016-1E23-BA18F20F992F"/>
+</associations>
+</Column>
+<Column name="DELIVERY_MANAGER_ID" id="8DEC4B9E-85CB-8B9F-CB09-01BDD8E7EB63">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>DELIVERY_MANAGER_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>A4C53357-7EB9-E016-1E23-BA18F20F992F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1A045B6-9052-C111-48FB-F6F1C0484203" referredColumn="A4C53357-7EB9-E016-1E23-BA18F20F992F"/>
+</associations>
+</Column>
+<Column name="SALES_PERSON_ID" id="E88A0980-1B02-40D4-24A9-2E9638806B6C">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>SALES_PERSON_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>A4C53357-7EB9-E016-1E23-BA18F20F992F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4BE1A5E-8D05-3A72-2BF3-F0F7A1421469" referredColumn="A4C53357-7EB9-E016-1E23-BA18F20F992F"/>
+</associations>
+</Column>
+<Column name="ENGAGEMENT_MANAGER_ID" id="12D01004-108B-5BC8-9741-72A337646C80">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>ENGAGEMENT_MANAGER_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>A4C53357-7EB9-E016-1E23-BA18F20F992F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B98AD21-0AF3-CA77-3693-49804E2E19AD" referredColumn="A4C53357-7EB9-E016-1E23-BA18F20F992F"/>
+</associations>
+</Column>
+<Column name="BUS_UNI_ID" id="086218FB-80A5-6A24-A51B-9E06ADF6A345">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>PIPELINE</sourceObjSchema>
+<sourceObjName>BUS_UNI_ID</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<delegate>05D58EF1-F107-FF12-E86F-750DE1DA74CE</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7698BCE-67DC-E63C-AAF8-C78D8A9812EE" referredColumn="05D58EF1-F107-FF12-E86F-750DE1DA74CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="045B0F61-9590-E8FB-A277-562840A3FD7D" name="XPKPIPELINE">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKPIPELINE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA517AE-2E5E-9EAB-C9B6-D4D58506BA8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD1881CE-E819-9264-0D95-E8299A0BA6D7" name="XPKPIPELINE">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XPKPIPELINE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA517AE-2E5E-9EAB-C9B6-D4D58506BA8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C3530E6-2503-FDC4-3844-1FDD2FDF7D17" name="XAK1PIPELINE">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>XAK1PIPELINE</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>5A7A2872-82E7-2F60-5082-8A5F86EF8460</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5C5A495-7042-CA87-DB39-3373CA8C5F3E"/>
+<colUsage columnID="24AF6D4A-A580-5AB7-8152-BC7B262AED50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FABE1724-1B8E-AC85-4762-05669E4EE385" name="PIPELINE_BUSINESS_UNITS_FK1">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="086218FB-80A5-6A24-A51B-9E06ADF6A345"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF581F04-8765-D706-FAE9-8D09F7977DBF" name="R_15">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FE58052-4503-F7E5-86C7-1B853F29210D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21E63FB8-4209-BAE6-8C25-C5623EA39A75" name="R_16">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EE5EE2E-D45B-947B-2992-4782138FAA57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D76E30E-DF03-91C8-9705-B3EBA22FF6D8" name="R_27">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECF05D19-9A1E-1704-7278-0C7EA997C876"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CBE997E-550A-EA8B-F65C-8A41591A9CC0" name="R_28">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DEC4B9E-85CB-8B9F-CB09-01BDD8E7EB63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2315E201-6AFD-1EB0-D47B-1BB2ECCE4179" name="R_29">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E88A0980-1B02-40D4-24A9-2E9638806B6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBC19E05-DD70-5BF1-BFC5-E7588E29D9A9" name="R_30">
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:16 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12D01004-108B-5BC8-9741-72A337646C80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

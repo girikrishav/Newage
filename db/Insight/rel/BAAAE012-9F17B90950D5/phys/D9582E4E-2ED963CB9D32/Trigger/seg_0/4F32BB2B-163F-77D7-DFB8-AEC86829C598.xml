@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INV_DET_POST_INS_UPD" directorySegmentName="seg_0" id="4F32BB2B-163F-77D7-DFB8-AEC86829C598">
+<sourceConnName>xraydev</sourceConnName>
+<sourceObjSchema>XRAYDEV</sourceObjSchema>
+<sourceObjName>INV_DET_POST_INS_UPD</sourceObjName>
+<createdBy>maintenance</createdBy>
+<createdTime>2015-01-21 03:30:15 UTC</createdTime>
+<ownerDesignName>Insight</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>BEGIN&lt;br/&gt;  UPDATE INVOICE_HEADERS&lt;br/&gt;  SET AMOUNT = NVL(AMOUNT, 0) - NVL(:OLD.LINE_AMOUNT, 0) + NVL(:NEW.LINE_AMOUNT, 0)&lt;br/&gt;  WHERE ID   = :NEW.INV_HEA_ID;&lt;br/&gt;  INSERT&lt;br/&gt;  INTO INVOICE_DETAIL_AUDIT&lt;br/&gt;    (&lt;br/&gt;      ID,&lt;br/&gt;      DESCRIPTION,&lt;br/&gt;      LINE_AMOUNT,&lt;br/&gt;      COMMENTS,&lt;br/&gt;      INV_HEA_ID,&lt;br/&gt;      INV_MIL_ID,&lt;br/&gt;      AUDIT_LOGIN,&lt;br/&gt;      AUDIT_DATE,&lt;br/&gt;      INV_DET_ID&lt;br/&gt;    )&lt;br/&gt;  SELECT INV_DET_AUD_SEQ.NEXTVAL,&lt;br/&gt;    :NEW.DESCRIPTION,&lt;br/&gt;    :NEW.LINE_AMOUNT,&lt;br/&gt;    :NEW.COMMENTS,&lt;br/&gt;    :NEW.INV_HEA_ID,&lt;br/&gt;    :NEW.INV_MIL_ID,&lt;br/&gt;    NVL(V(&apos;APP_USER&apos;), USER),&lt;br/&gt;    SYSDATE,&lt;br/&gt;    :NEW.ID&lt;br/&gt;  FROM DUAL;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>42BF9B12-1809-88EE-330C-88F8510DCEFE</owner>
+<table>9E30F349-78FF-CFE0-6CBA-F5065C847B9B</table>
+</TriggerOraclev10g>
